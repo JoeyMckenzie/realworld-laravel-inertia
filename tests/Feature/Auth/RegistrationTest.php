@@ -1,7 +1,10 @@
 <?php
 
 use App\Providers\RouteServiceProvider;
-use function Pest\Laravel\{assertAuthenticated, get, post};
+
+use function Pest\Laravel\assertAuthenticated;
+use function Pest\Laravel\get;
+use function Pest\Laravel\post;
 
 test('registration screen can be rendered', function () {
     $response = get('/register');
