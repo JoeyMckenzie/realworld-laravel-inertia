@@ -1,0 +1,4 @@
+#!/bin/sh
+
+composer fmt
+composer lint

@@ -25,7 +25,7 @@
         "nunomaduro/collision": "^7.0",
         "nunomaduro/larastan": "^2.0",
         "pestphp/pest": "^2.0",
-        "pestphp/pest-plugin-laravel": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.2",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
@@ -54,10 +54,11 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
-        "fmt": "./vendor/bin/pint",
-        "lint": "./vendor/bin/phpstan analyse --memory-limit 128M",
+        "fmt": "./vendor/bin/pint && npm run fmt",
+        "lint": "./vendor/bin/phpstan analyse --memory-limit 256M",
         "test": "./vendor/bin/pest",
-        "types": "./vendor/bin/pest --type-coverage --min=100"
+        "types": "./vendor/bin/pest --type-coverage --min=100",
+        "prepare": "git config core.hookspath .githooks"
     },
     "extra": {
         "laravel": {
