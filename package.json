@@ -8,6 +8,10 @@
         "lint:quiet": "eslint --ext --quiet .js,.ts,.vue resources",
         "fmt": "prettier --write --ignore-unknown ."
     },
+    "lint-staged": {
+        "**/*.php": "composer fmt",
+        "**/*.{js,ts,vue,json}": "npm run fmt"
+    },
     "devDependencies": {
         "@inertiajs/vue3": "^1.0.0",
         "@tailwindcss/forms": "^0.5.3",
