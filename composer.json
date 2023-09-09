@@ -27,6 +27,7 @@
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.2",
         "pestphp/pest-plugin-type-coverage": "^2.2",
+        "pestphp/pest-plugin-watch": "^2.0",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
@@ -58,6 +59,7 @@
         "fmt": "./vendor/bin/pint && npm run fmt",
         "lint": "./vendor/bin/phpstan analyse --memory-limit 256M",
         "test": "./vendor/bin/pest",
+        "test:watch": "./vendor/bin/pest --watch",
         "types": "./vendor/bin/pest --type-coverage --min=100",
         "prepare": "git config core.hookspath .githooks"
     },
