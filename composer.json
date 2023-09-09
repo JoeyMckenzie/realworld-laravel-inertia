@@ -57,7 +57,7 @@
             "@php artisan key:generate --ansi"
         ],
         "fmt": "./vendor/bin/pint && npm run fmt",
-        "lint": "./vendor/bin/phpstan analyse --memory-limit 256M --xdebug",
+        "lint": "./vendor/bin/phpstan analyse --memory-limit 256M",
         "test": "./vendor/bin/pest",
         "test:watch": "./vendor/bin/pest --watch",
         "types": "./vendor/bin/pest --type-coverage --min=100",
